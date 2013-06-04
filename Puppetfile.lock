@@ -124,6 +124,11 @@ GITHUBTARBALL
     transmit (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tunnelblick
+  specs:
+    tunnelblick (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-vlc
   specs:
     vlc (1.0.1)
@@ -132,6 +137,11 @@ GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
   specs:
     inifile (0.9.0)
+
+GITHUBTARBALL
+  remote: newtriks/puppet-charles
+  specs:
+    charles (1.0.2)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
@@ -143,6 +153,7 @@ DEPENDENCIES
   alfred (= 1.1.0)
   better_touch_tools (= 1.0.0)
   boxen (= 2.1.0)
+  charles (= 1.0.2)
   chrome (= 1.1.0)
   codekit (= 1.0.1)
   dnsmasq (= 1.0.0)
@@ -166,5 +177,6 @@ DEPENDENCIES
   stdlib (= 4.0.2)
   sudo (= 1.0.0)
   transmit (= 1.0.0)
+  tunnelblick (= 1.0.0)
   vlc (= 1.0.1)
 
