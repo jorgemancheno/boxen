@@ -33,3 +33,18 @@ github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "adium" ,             "1.1.1"
+github "alfred" ,            "1.1.0"
+github "better_touch_tools", "1.0.0"
+github "chrome",             "1.1.0"
+github "codekit",            "1.0.1"
+github "dropbox",            "1.1.0"
+github "firefox",            "1.0.6"
+github "github_for_mac",     "1.0.1"
+github "gitx",               "1.2.0"
+github "istatmenus4",        "1.0.0"
+github "iterm2",             "1.0.2"
+github "rdio",               "1.0.0"
+github "sequel_pro",         "1.0.0"
+github "transmit",           "1.0.0"
+github "vlc",                "1.0.1"
