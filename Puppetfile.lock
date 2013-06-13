@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.1.0)
+    alfred (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.0.6)
+    firefox (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -190,7 +190,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.1)
-  alfred (= 1.1.0)
+  alfred (= 1.1.1)
   appcleaner (= 1.0.0)
   better_touch_tools (= 1.0.0)
   boxen (= 2.1.0)
@@ -199,7 +199,7 @@ DEPENDENCIES
   codekit (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
-  firefox (= 1.0.6)
+  firefox (= 1.1.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
   github_for_mac (= 1.0.1)
