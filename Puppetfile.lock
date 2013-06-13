@@ -9,6 +9,11 @@ GITHUBTARBALL
     alfred (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-appcleaner
+  specs:
+    appcleaner (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-better_touch_tools
   specs:
     better_touch_tools (1.0.0)
@@ -178,9 +183,15 @@ GITHUBTARBALL
   specs:
     stdlib (4.0.2)
 
+GITHUBTARBALL
+  remote: slantview/puppet-sublime_text
+  specs:
+    sublime_text (1.2.1)
+
 DEPENDENCIES
   adium (= 1.1.1)
   alfred (= 1.1.0)
+  appcleaner (= 1.0.0)
   better_touch_tools (= 1.0.0)
   boxen (= 2.1.0)
   charles (= 1.0.2)
@@ -208,6 +219,7 @@ DEPENDENCIES
   ruby (= 4.1.0)
   sequel_pro (= 1.0.0)
   stdlib (= 4.0.2)
+  sublime_text (= 1.2.1)
   sudo (= 1.0.0)
   transmission (= 1.0.0)
   transmit (= 1.0.0)

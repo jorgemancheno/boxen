@@ -1,6 +1,7 @@
 class people::jorgemancheno {
     # Applications
     include adium
+    include appcleaner
     include alfred
     include better_touch_tools
     include charles
@@ -16,6 +17,7 @@ class people::jorgemancheno {
     include iterm2::dev
     include rdio
     include sequel_pro
+    include sublime_text
     include transmit
     include tunnelblick
     include vagrant
@@ -59,4 +61,9 @@ class people::jorgemancheno {
 
     # Set node.js version
     class { 'nodejs::global': version => 'v0.10.5' }
+
+    # Install some node modules
+    nodejs::module { 'grunt-cli':
+      node_version => 'v0.10'
+    }
 }
