@@ -74,7 +74,7 @@ class people::jorgemancheno {
       version => '~> 3.2.9'
     }
 
-    # Install SASS
+    # Install lunchy
     ruby::gem { "lunchy for ${env['versions']['ruby']}":
       gem     => 'lunchy',
       ruby    => $env['versions']['ruby'],
