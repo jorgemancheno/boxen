@@ -23,6 +23,7 @@ class people::jorgemancheno {
     include vagrant
     include virtualbox
     include vlc
+    include xquartz
 
     # Machine-specific apps
     case $::hostname {
@@ -40,6 +41,10 @@ class people::jorgemancheno {
             home     => "/Users/${::boxen_user}",
             repos    => "/Users/${::boxen_user}/Code",
             dotfiles => "/Users/${::boxen_user}/Code/dotfiles"
+        },
+        versions => {
+            ruby   => "1.9.3",
+            nodejs => "v0.10.12"
         }
     }
 
@@ -60,27 +65,27 @@ class people::jorgemancheno {
     }
 
     # Set ruby version
-    # class { 'ruby::global': version => '1.9.3' }
+    class { 'ruby::global': version => $env['versions']['ruby'] }
 
     # Install SASS
-    # ruby::gem { "sass for ${version}":
-    #   gem     => 'sass',
-    #   ruby    => $version,
-    #   version => '~> 3.2.9'
-    # }
+    ruby::gem { "sass for ${env['versions']['ruby']}":
+      gem     => 'sass',
+      ruby    => $env['versions']['ruby'],
+      version => '~> 3.2.9'
+    }
 
-    # # Install SASS
-    # ruby::gem { "lunchy for ${version}":
-    #   gem     => 'lunchy',
-    #   ruby    => $version,
-    #   version => '~> 0.6.0'
-    # }
+    # Install SASS
+    ruby::gem { "lunchy for ${env['versions']['ruby']}":
+      gem     => 'lunchy',
+      ruby    => $env['versions']['ruby'],
+      version => '~> 0.6.0'
+    }
 
     # Set node.js version
-    class { 'nodejs::global': version => 'v0.10.5' }
+    class { 'nodejs::global': version => $env['versions']['nodejs'] }
 
     # Install some node modules
     nodejs::module { 'grunt-cli':
-      node_version => 'v0.10'
+      node_version => $env['versions']['nodejs']
     }
 }
