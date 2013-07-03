@@ -59,6 +59,23 @@ class people::jorgemancheno {
         require     => Repository["${env['directories']['dotfiles']}"]
     }
 
+    # Set ruby version
+    # class { 'ruby::global': version => '1.9.3' }
+
+    # Install SASS
+    # ruby::gem { "sass for ${version}":
+    #   gem     => 'sass',
+    #   ruby    => $version,
+    #   version => '~> 3.2.9'
+    # }
+
+    # # Install SASS
+    # ruby::gem { "lunchy for ${version}":
+    #   gem     => 'lunchy',
+    #   ruby    => $version,
+    #   version => '~> 0.6.0'
+    # }
+
     # Set node.js version
     class { 'nodejs::global': version => 'v0.10.5' }
 
