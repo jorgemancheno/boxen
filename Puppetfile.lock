@@ -14,6 +14,11 @@ GITHUBTARBALL
     appcleaner (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-better_touch_tools
   specs:
     better_touch_tools (1.0.0)
@@ -21,7 +26,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.3.5)
+    boxen (3.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-charles
@@ -56,12 +61,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.0.0)
+    gcc (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.2.4)
+    git (1.2.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-github_for_mac
@@ -81,12 +86,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.1.2)
+    homebrew (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.0.0)
+    hub (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-imageoptim
@@ -111,12 +116,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.2.5)
+    nodejs (3.2.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
     onepassword (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-openssl
+  specs:
+    openssl (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-rdio
@@ -131,7 +141,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (5.0.2)
+    ruby (6.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-sequel_pro
@@ -179,9 +189,9 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
-  remote: cprice404/puppetlabs-inifile
+  remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (0.9.0)
+    inifile (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
@@ -197,31 +207,33 @@ DEPENDENCIES
   adium (= 1.1.1)
   alfred (= 1.1.1)
   appcleaner (= 1.0.0)
+  autoconf (= 1.0.0)
   better_touch_tools (= 1.0.0)
-  boxen (= 2.3.5)
+  boxen (= 3.0.2)
   charles (= 1.0.2)
   chrome (= 1.1.1)
   codekit (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
   firefox (= 1.1.1)
-  gcc (= 2.0.0)
-  git (= 1.2.4)
+  gcc (= 2.0.1)
+  git (= 1.2.5)
   github_for_mac (= 1.0.1)
   gitx (= 1.2.0)
   handbrake (= 1.0.1)
-  homebrew (= 1.1.2)
-  hub (= 1.0.0)
+  homebrew (= 1.4.1)
+  hub (= 1.0.3)
   imageoptim (= 0.0.2)
-  inifile (= 0.9.0)
+  inifile (= 1.0.0)
   istatmenus4 (= 1.0.0)
   iterm2 (= 1.0.2)
   nginx (= 1.4.2)
-  nodejs (= 3.2.5)
+  nodejs (= 3.2.9)
   onepassword (= 1.0.2)
+  openssl (= 1.0.0)
   rdio (= 1.0.0)
   repository (= 2.2.0)
-  ruby (= 5.0.2)
+  ruby (= 6.3.4)
   sequel_pro (= 1.0.0)
   stdlib (= 4.1.0)
   sublime_text (= 1.2.1)
