@@ -43,8 +43,8 @@ class people::jorgemancheno {
             dotfiles => "/Users/${::boxen_user}/Code/dotfiles"
         },
         versions => {
-            ruby   => "1.9.3",
-            nodejs => "v0.10.12"
+            ruby   => "2.0.0",
+            nodejs => "v0.10.18"
         }
     }
 
@@ -71,14 +71,14 @@ class people::jorgemancheno {
     ruby::gem { "sass for ${env['versions']['ruby']}":
       gem     => 'sass',
       ruby    => $env['versions']['ruby'],
-      version => '~> 3.2.9'
+      version => '~> 3.2.10'
     }
 
     # Install lunchy
     ruby::gem { "lunchy for ${env['versions']['ruby']}":
       gem     => 'lunchy',
       ruby    => $env['versions']['ruby'],
-      version => '~> 0.6.0'
+      version => '~> 0.7.0'
     }
 
     # Set node.js version
