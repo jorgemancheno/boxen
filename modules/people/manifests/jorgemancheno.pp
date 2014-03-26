@@ -43,7 +43,7 @@ class people::jorgemancheno {
             dotfiles => "/Users/${::boxen_user}/Code/dotfiles"
         },
         versions => {
-            ruby   => "2.0.0",
+            ruby   => "2.1.1",
             nodejs => "v0.10.18"
         }
     }
@@ -65,13 +65,13 @@ class people::jorgemancheno {
     }
 
     # Set ruby version
-    class { 'ruby::global': version => $env['versions']['ruby'] }
+    # class { 'ruby::global': version => $env['versions']['ruby'] }
 
     # Install SASS
     ruby::gem { "sass for ${env['versions']['ruby']}":
       gem     => 'sass',
       ruby    => $env['versions']['ruby'],
-      version => '~> 3.2.10'
+      version => '~> 3.3.4'
     }
 
     # Install lunchy

@@ -4,60 +4,80 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
-def github(name, version, options = nil)
-  options ||= {}
-  options[:repo] ||= "boxen/puppet-#{name}"
-  mod name, version, :github_tarball => options[:repo]
+# Shortcut for a module from GitHub's boxen organization
+def github(name, *args)
+  options ||= if args.last.is_a? Hash
+    args.last
+  else
+    {}
+  end
+
+  if path = options.delete(:path)
+    mod name, :path => path
+  else
+    version = args.first
+    options[:repo] ||= "boxen/puppet-#{name}"
+    mod name, version, :github_tarball => options[:repo]
+  end
+end
+
+# Shortcut for a module under development
+def dev(name, *args)
+  mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen",      "3.0.2"
+github "boxen", "3.4.2"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "autoconf",   "1.0.0"
-github "dnsmasq",    "1.0.0"
-github "gcc",        "2.0.1"
-github "git",        "1.2.5"
-github "homebrew",   "1.4.1"
-github "hub",        "1.0.3"
-github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",      "1.4.2"
-github "nodejs",     "3.2.10"
-github "openssl",    "1.0.0"
-github "repository", "2.2.0"
-github "ruby",       "6.3.4"
-github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",       "1.0.0"
-github "xquartz",    "1.1.0"
+github "dnsmasq",     "1.0.1"
+github "foreman",     "1.2.0"
+github "gcc",         "2.0.100"
+github "git",         "2.2.2"
+github "go",          "1.1.0"
+github "homebrew",    "1.6.1"
+github "hub",         "1.3.0"
+github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
+github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
+github "nginx",       "1.4.3"
+github "nodejs",      "3.6.0"
+github "openssl",     "1.0.0"
+github "phantomjs",   "2.1.0"
+github "pkgconfig",   "1.0.0"
+github "repository",  "2.3.0"
+github "ruby",        "7.2.4"
+github "stdlib",      "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
+github "sudo",        "1.0.0"
+github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "adium",              "1.1.1"
+github "adium",              "1.3.0"
 github "appcleaner",         "1.0.0"
-github "alfred" ,            "1.1.4"
+github "alfred" ,            "1.1.7"
 github "better_touch_tools", "1.0.0"
-github "charles",            "1.0.2"
-github "chrome",             "1.1.1"
-github "codekit",            "1.0.3"
-github "dropbox",            "1.1.1"
-github "firefox",            "1.1.3"
-github "github_for_mac",     "1.0.1"
+github "charles",            "1.0.4"
+github "chrome",             "1.1.2"
+github "codekit",            "1.0.4"
+github "dropbox",            "1.2.0"
+github "firefox",            "1.1.8"
+github "github_for_mac",     "1.0.2"
 github "gitx",               "1.2.0"
 github "handbrake",          "1.0.1"
 github "imageoptim",         "0.0.2"
-github "istatmenus4",        "1.0.0"
-github "iterm2",             "1.0.3"
-github "onepassword",        "1.0.2"
+github "istatmenus4",        "1.1.0"
+github "iterm2",             "1.0.7"
+github "onepassword",        "1.1.0"
 github "rdio",               "1.0.0"
-github "sequel_pro",         "1.0.0"
+github "sequel_pro",         "1.0.1"
 github "sublime_text",       "1.2.1", :repo => "slantview/puppet-sublime_text"
-github "transmission",       "1.0.0"
-github "transmit",           "1.0.1"
-github "tunnelblick",        "1.0.2"
-github "vagrant",            "2.0.12"
-github "virtualbox",         "1.0.5"
-github "vlc",                "1.0.4"
+github "transmission",       "1.1.0"
+github "transmit",           "1.0.2"
+github "tunnelblick",        "1.0.5"
+github "vagrant",            "3.0.6"
+github "virtualbox",         "1.0.11"
+github "vlc",                "1.0.5"
