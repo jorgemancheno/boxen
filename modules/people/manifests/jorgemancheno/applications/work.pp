@@ -4,7 +4,7 @@
 #
 class people::jorgemancheno::applications::work {
 
-    include firefox::aurora
-    include firefox::nightly
+    # include firefox::aurora
+    # include firefox::nightly
 
 }
