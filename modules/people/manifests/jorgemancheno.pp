@@ -1,34 +1,14 @@
 class people::jorgemancheno {
 
+    include people::jorgemancheno::dotfiles
     include people::jorgemancheno::applications
 
     # Configuration Setup
     $env = {
-        directories => {
-            home     => "/Users/${::boxen_user}",
-            repos    => "/Users/${::boxen_user}/Code",
-            dotfiles => "/Users/${::boxen_user}/Code/dotfiles"
-        },
         versions => {
             ruby   => "2.1.1",
             nodejs => "v0.10.18"
         }
-    }
-
-    # Dotfile Setup
-    file { "${env['directories']['repos']}":
-        ensure => "directory"
-    }
-    ~> repository { "${env['directories']['dotfiles']}":
-        source  => "jorgemancheno/dotfiles",
-        require => File["${env['directories']['repos']}"]
-    }
-    ~> exec { "Install dotfiles":
-        cwd         => "${env['directories']['dotfiles']}",
-        command     => "./sync.sh --force",
-        provider    => shell,
-        refreshonly => true,
-        require     => Repository["${env['directories']['dotfiles']}"]
     }
 
     # Set ruby version
