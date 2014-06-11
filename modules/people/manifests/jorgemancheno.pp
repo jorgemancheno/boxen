@@ -19,7 +19,6 @@ class people::jorgemancheno {
     include sequel_pro
     include sublime_text
     include transmit
-    include tunnelblick
     include vagrant
     include virtualbox
     include vlc
