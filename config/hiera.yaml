@@ -12,6 +12,8 @@
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
 :hierarchy:
+  - "users/%{github_login}/nodes/%{::hostname}"
+  - "users/%{github_login}/nodes/common"
   - "users/%{github_login}"
   - common
 

@@ -1,0 +1,6 @@
+---
+boxen::security::require_password: true
+boxen::security::screensaver_delay_sec: 5
+
+people::jorgemancheno::system_roles:
+  - workstation
