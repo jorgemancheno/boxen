@@ -8,17 +8,16 @@ class people::jorgemancheno::applications::general {
     include adium
     include appcleaner
     include alfred
-    include better_touch_tools
-    include charles
+    # include better_touch_tools
     include chrome::dev
     include chrome::canary
-    include codekit
+    # include codekit
     include dropbox
     include firefox
-    include github_for_mac
+    # include github_for_mac
     include gitx::dev
     include imageoptim
-    include istatmenus4
+    # include istatmenus4
     include iterm2::dev
     include rdio
     include sequel_pro

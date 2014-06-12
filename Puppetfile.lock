@@ -14,6 +14,11 @@ GITHUBTARBALL
     appcleaner (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-better_touch_tools
   specs:
     better_touch_tools (1.0.0)
@@ -114,6 +119,21 @@ GITHUBTARBALL
     iterm2 (1.1.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-libpng
+  specs:
+    libpng (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -134,9 +154,24 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.7.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pcre
+  specs:
+    pcre (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.3.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-php
+  specs:
+    php (1.2.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -199,6 +234,11 @@ GITHUBTARBALL
     vlc (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.1)
@@ -222,6 +262,7 @@ DEPENDENCIES
   adium (= 1.4.0)
   alfred (= 1.2.0)
   appcleaner (= 1.0.0)
+  autoconf (= 1.0.0)
   better_touch_tools (= 1.0.0)
   boxen (= 3.6.1)
   charles (= 1.0.4)
@@ -243,12 +284,18 @@ DEPENDENCIES
   inifile (= 1.0.3)
   istatmenus4 (= 1.1.0)
   iterm2 (= 1.1.1)
+  libpng (= 1.0.0)
+  libtool (= 1.0.0)
   module-data (= 0.0.3)
+  mysql (= 1.2.0)
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
   onepassword (= 1.1.1)
   openssl (= 1.0.0)
+  osx (= 2.7)
+  pcre (= 1.0.0)
   phantomjs (= 2.3.0)
+  php (= 1.2.3)
   pkgconfig (= 1.0.0)
   rdio (= 1.0.0)
   repository (= 2.3.0)
@@ -262,5 +309,6 @@ DEPENDENCIES
   vagrant (= 3.1.1)
   virtualbox (= 1.0.12)
   vlc (= 1.1.0)
+  wget (= 1.0.1)
   xquartz (= 1.1.1)
 
