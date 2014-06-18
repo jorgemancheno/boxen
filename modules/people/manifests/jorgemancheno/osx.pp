@@ -23,7 +23,7 @@ class people::jorgemancheno::osx {
     # == Global Settings
     # include osx::global::disable_key_press_and_hold # disable press-and-hold for accented character entry
     include osx::global::enable_keyboard_control_access # enables the keyboard for navigating controls in dialogs
-    include osx::global::enable_standard_function_keys # enables the F1, F2, etc. keys to be treated as standard function keys
+    # include osx::global::enable_standard_function_keys # enables the F1, F2, etc. keys to be treated as standard function keys
     include osx::global::expand_print_dialog # expand the print dialog by default
     include osx::global::expand_save_dialog # expand the save dialog by default
     include osx::global::disable_remote_control_ir_receiver # disable remote control infrared receiver
@@ -145,9 +145,9 @@ class people::jorgemancheno::osx {
     #     action => 'Desktop'
     # }
 
-    # Make the bottom left corner start the screen saver
+    # Make the bottom left corner put the display to sleep
     osx::dock::hot_corner { 'Bottom Left':
-        action => 'Start Screen Saver'
+        action => 'Put Display to Sleep'
     }
 
     # osx::dock::hot_corners
