@@ -67,9 +67,9 @@ class people::jorgemancheno::osx {
     # Set the default value (35)
     # include osx::global::key_repeat_delay
     #
-    class { 'osx::global::key_repeat_delay':
-        delay => 10
-    }
+    # class { 'osx::global::key_repeat_delay':
+    #     delay => 35
+    # }
 
     # osx::global::key_repeat_rate
     # The amount of time (in ms) before key repeat 'presses'
@@ -77,9 +77,9 @@ class people::jorgemancheno::osx {
     # Set the default value (0)
     # include osx::global::key_repeat_rate
     #
-    class { 'osx::global::key_repeat_rate':
-      rate => 2
-    }
+    # class { 'osx::global::key_repeat_rate':
+    #   rate => 0
+    # }
 
     # osx::global::natural_mouse_scrolling
     # Enable/disable 'natural' mouse scrolling. Requires re-login for new settings to initialize.
