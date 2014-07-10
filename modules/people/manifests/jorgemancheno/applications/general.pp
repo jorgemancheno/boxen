@@ -14,8 +14,9 @@ class people::jorgemancheno::applications::general {
     # include codekit
     include dropbox
     include firefox
-    # include github_for_mac
-    include gitx::dev
+    include firefox::beta
+    # include firefox::aurora
+    include github_for_mac
     include imageoptim
     # include istatmenus4
     include iterm2::dev

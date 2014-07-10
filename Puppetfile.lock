@@ -21,7 +21,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-better_touch_tools
   specs:
-    better_touch_tools (1.0.0)
+    better_touch_tools (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -56,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.1.8)
+    firefox (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -76,12 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-github_for_mac
   specs:
-    github_for_mac (1.0.2)
-
-GITHUBTARBALL
-  remote: boxen/puppet-gitx
-  specs:
-    gitx (1.2.0)
+    github_for_mac (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -146,7 +141,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.1.1)
+    onepassword (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -171,7 +166,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-php
   specs:
-    php (1.2.3)
+    php (1.2.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -263,19 +258,18 @@ DEPENDENCIES
   alfred (= 1.2.0)
   appcleaner (= 1.0.0)
   autoconf (= 1.0.0)
-  better_touch_tools (= 1.0.0)
+  better_touch_tools (= 2.0.0)
   boxen (= 3.6.1)
   charles (= 1.0.4)
   chrome (= 1.1.2)
   codekit (= 1.0.4)
   dnsmasq (= 1.0.1)
   dropbox (= 1.2.0)
-  firefox (= 1.1.8)
+  firefox (= 1.2.1)
   foreman (= 1.2.0)
   gcc (= 2.0.101)
   git (= 2.4.0)
-  github_for_mac (= 1.0.2)
-  gitx (= 1.2.0)
+  github_for_mac (= 1.0.3)
   go (= 1.1.0)
   handbrake (= 1.0.1)
   homebrew (= 1.9.3)
@@ -290,12 +284,12 @@ DEPENDENCIES
   mysql (= 1.2.0)
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
-  onepassword (= 1.1.1)
+  onepassword (= 1.1.2)
   openssl (= 1.0.0)
-  osx (= 2.7)
+  osx (= 2.7.0)
   pcre (= 1.0.0)
   phantomjs (= 2.3.0)
-  php (= 1.2.3)
+  php (= 1.2.4)
   pkgconfig (= 1.0.0)
   rdio (= 1.0.0)
   repository (= 2.3.0)
