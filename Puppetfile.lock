@@ -236,7 +236,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.1)
+    xquartz (1.2.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -304,5 +304,5 @@ DEPENDENCIES
   virtualbox (= 1.0.12)
   vlc (= 1.1.0)
   wget (= 1.0.1)
-  xquartz (= 1.1.1)
+  xquartz (= 1.2.0)
 
