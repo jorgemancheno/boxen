@@ -7,8 +7,9 @@ class people::jorgemancheno::applications::general {
     # Applications
     include adium
     include appcleaner
-    # include alfred
+    include alfred
     # include better_touch_tools
+    include chrome
     include chrome::dev
     include chrome::canary
     # include codekit

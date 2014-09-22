@@ -5,7 +5,7 @@
 class people::jorgemancheno::applications::work {
 
     include autoconf
-    include charles
+    # include charles
     include libpng
     include libtool
     include mysql
@@ -13,7 +13,7 @@ class people::jorgemancheno::applications::work {
     include php
     include wget
 
-    #class { 'php::global':
-    #    version => '5.5.17'
-    #}
+    # class { 'php::global':
+    #     version => '5.5.17'
+    # }
 }
