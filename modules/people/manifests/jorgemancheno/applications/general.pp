@@ -5,10 +5,8 @@
 class people::jorgemancheno::applications::general {
 
     # Applications
-    include adium
     include appcleaner
     include alfred
-    # include better_touch_tools
     include chrome
     include chrome::dev
     include chrome::canary
@@ -19,7 +17,6 @@ class people::jorgemancheno::applications::general {
     # include firefox::aurora
     include github_for_mac
     include imageoptim
-    # include istatmenus4
     include iterm2::dev
     include rdio
     include sequel_pro

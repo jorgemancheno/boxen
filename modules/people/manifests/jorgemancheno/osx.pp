@@ -28,13 +28,14 @@ class people::jorgemancheno::osx {
     include osx::global::expand_save_dialog # expand the save dialog by default
     include osx::global::disable_remote_control_ir_receiver # disable remote control infrared receiver
     # include osx::global::disable_autocorrect # disables spelling autocorrection
-    include osx::global::tap_to_click # enables tap to click
+    # include osx::global::tap_to_click # enables tap to click
 
     # == Dock Settings
     # include osx::dock::2d # use the old flat dock style
     # include osx::dock::autohide # automatically hide the dock
     # include osx::dock::clear_dock # ensures the dock only contains apps that are running
     # include osx::dock::disable # disable the dock by setting a long autohide-delay
+    # include osx::dock::disable_dashboard # disable the dashboard
     include osx::dock::dim_hidden_apps # dims icons of hidden apps
     # include osx::dock::hide_indicator_lights # remove the indicator lights below running apps
 
@@ -48,13 +49,17 @@ class people::jorgemancheno::osx {
     include osx::finder::unhide_library # unsets the hidden flag on ~/Library
     # include osx::finder::show_hidden_files
     include osx::finder::enable_quicklook_text_selection
+    include osx::finder::show_warning_before_emptying_trash
+    include osx::finder::show_warning_before_changing_an_extension
+    include osx::finder::show_all_filename_extensions
+    include osx::finder::no_file_extension_warnings
 
     # == Universal Access Settings
     # include osx::universal_access::ctrl_mod_zoom # enables zoom by scrolling while holding Control
     # include osx::universal_access::enable_scrollwheel_zoom # enables zoom using the scroll wheel
 
     # == Miscellaneous Settings
-    # include osx::disable_app_quarantine # Disable the downloaded app quarantine
+    include osx::disable_app_quarantine # Disable the downloaded app quarantine
     include osx::no_network_dsstores # Disable creation of .DS_Store files on network shares
     include osx::software_update # Download and install software updates
     # include osx::keyboard::capslock_to_control # Remaps capslock to control on attached keyboards
@@ -85,7 +90,7 @@ class people::jorgemancheno::osx {
     # Enable/disable 'natural' mouse scrolling. Requires re-login for new settings to initialize.
     #
     # Set the default value (enabled=true)
-    # include osx::global::natural_mouse_scrolling
+    include osx::global::natural_mouse_scrolling
     #
     # class { 'osx::global::natural_mouse_scrolling':
     #     delay => false
@@ -138,6 +143,11 @@ class people::jorgemancheno::osx {
     # osx::dock::hot_corner { 'Top Left':
     #     action => 'Dashboard'
     # }
+
+    # Make the top left corner start the screensaver
+    osx::dock::hot_corner { 'Top Left':
+        action => 'Start Screen Saver'
+    }
 
     # Make the bottom right corner show the desktop
     # osx::dock::hot_corner { 'Show the desktop':
@@ -198,5 +208,16 @@ class people::jorgemancheno::osx {
     #
     # class { 'osx::mouse::swipe_between_pages':
     #     enabled => true
+    # }
+
+    # osx::dock::magnification
+    # Size of dock icon magnification
+    #
+    # Set the default value (true, 128)
+    # include osx::dock::magnification
+    #
+    # class { 'osx::dock::magnification':
+    #     magnification => true,
+    #     magnification_size => 84
     # }
 }

@@ -4,7 +4,7 @@
 #
 class people::jorgemancheno::nodejs {
 
-    $version = "v0.10.18"
+    $version = "v0.12.0"
 
     # Set node.js version
     class { 'nodejs::global': version => $version }
