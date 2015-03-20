@@ -6,6 +6,7 @@ class people::jorgemancheno::applications::personal {
 
     include handbrake
     include onepassword
+    include sonos
     include transmission
 
 }

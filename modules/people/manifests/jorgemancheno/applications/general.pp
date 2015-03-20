@@ -20,7 +20,9 @@ class people::jorgemancheno::applications::general {
     include iterm2::dev
     include rdio
     include sequel_pro
+    include spotify
     include sublime_text
+    include textexpander
     include transmit
     include vagrant
     include virtualbox
