@@ -5,7 +5,6 @@
 class people::jorgemancheno::applications::work {
 
     include autoconf
-    # include charles
     include libpng
     include libtool
     include mysql
