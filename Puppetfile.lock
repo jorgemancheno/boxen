@@ -9,6 +9,11 @@ GITHUBTARBALL
     appcleaner (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-atom
+  specs:
+    atom (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -51,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (3.0.1)
+    gcc (3.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
@@ -101,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
-    mysql (2.1.1)
+    mysql (2.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -174,11 +179,6 @@ GITHUBTARBALL
     sonos (1.0.4)
 
 GITHUBTARBALL
-  remote: boxen/puppet-spotify
-  specs:
-    spotify (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-sublime_text
   specs:
     sublime_text (1.1.0)
@@ -246,6 +246,7 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (= 1.5.0)
   appcleaner (= 1.0.0)
+  atom (= 1.1.0)
   autoconf (= 1.0.0)
   boxen (= 3.11.0)
   brewcask (= 0.0.6)
@@ -254,7 +255,7 @@ DEPENDENCIES
   dropbox (= 1.4.1)
   firefox (= 1.2.3)
   foreman (= 1.2.0)
-  gcc (= 3.0.1)
+  gcc (= 3.0.2)
   git (= 2.7.92)
   go (= 2.1.0)
   handbrake (= 1.0.1)
@@ -266,7 +267,7 @@ DEPENDENCIES
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   module_data (= 0.0.4)
-  mysql (= 2.1.1)
+  mysql (= 2.1.2)
   nginx (= 1.4.6)
   nodejs (= 4.0.1)
   onepassword (= 1.1.5)
@@ -281,7 +282,6 @@ DEPENDENCIES
   ruby (= 8.5.2)
   sequel_pro (= 1.0.1)
   sonos (= 1.0.4)
-  spotify (= 1.0.2)
   stdlib (= 4.6.0)
   sublime_text (= 1.1.0)
   sudo (= 1.0.0)

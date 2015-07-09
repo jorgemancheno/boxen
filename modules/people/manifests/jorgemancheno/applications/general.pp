@@ -5,6 +5,7 @@
 class people::jorgemancheno::applications::general {
 
     # Applications
+    include atom
     include appcleaner
     include alfred
     include chrome
@@ -18,7 +19,6 @@ class people::jorgemancheno::applications::general {
     include iterm2::dev
     include rdio
     include sequel_pro
-    # include spotify
     include sublime_text
     include textexpander
     include transmit
@@ -26,5 +26,4 @@ class people::jorgemancheno::applications::general {
     # include virtualbox
     include vlc
     include xquartz
-
 }

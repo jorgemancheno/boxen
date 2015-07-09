@@ -4,12 +4,16 @@
 #
 class people::jorgemancheno::nodejs {
 
-    $version = "v0.12.5"
+    $version = "v0.12.6"
 
     # Set node.js version
     class { 'nodejs::global': version => $version }
 
     # Install some node modules
+    nodejs::module { 'bower':
+      node_version => $version
+    }
+
     nodejs::module { 'grunt-cli':
       node_version => $version
     }
