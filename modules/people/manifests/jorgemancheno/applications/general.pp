@@ -4,26 +4,44 @@
 #
 class people::jorgemancheno::applications::general {
 
-    # Applications
-    include atom
-    include appcleaner
-    include alfred
-    include chrome
-    include chrome::dev
-    include chrome::canary
-    include dropbox
-    include firefox
-    include firefox::beta
-    # include firefox::aurora
-    include imageoptim
-    include iterm2::dev
-    include rdio
-    include sequel_pro
-    include sublime_text
-    include textexpander
-    include transmit
-    # include vagrant
-    # include virtualbox
-    include vlc
-    include xquartz
+  include brewcask
+
+  # Applications
+  $apps = [
+    'atom',
+    'appcleaner',
+    'google-chrome',
+    'dropbox',
+    'firefox',
+    'imageoptim',
+    'iterm2',
+    'transmit',
+    'vagrant',
+    'virtualbox',
+    'vlc',
+    'xquartz'
+  ]
+
+  # Applications that need sudo
+  $sudoApps = [
+    'alfred',
+    'textexpander'
+  ]
+
+  # https://github.com/boxen/puppet-brewcask/issues/22#issuecomment-150398085
+  sudoers { 'installer':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) SETENV:NOPASSWD: /usr/sbin/installer',
+    ],
+    type     => 'user_spec',
+  }
+
+  Package { provider => 'brewcask' }
+  package { $apps: }
+  package {
+    $sudoApps: require  => [ Homebrew::Tap['caskroom/cask'], Sudoers['installer'] ],
+  }
+
 }

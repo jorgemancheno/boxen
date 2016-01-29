@@ -4,9 +4,15 @@
 #
 class people::jorgemancheno::applications::personal {
 
-    include handbrake
-    include onepassword
-    include sonos
-    include transmission
+  include brewcask
+
+  $apps = [
+    'handrake',
+    '1password'
+    'sonos',
+    'transmission'
+  ]
+
+  package { $apps: provider => 'brewcask' }
 
 }
