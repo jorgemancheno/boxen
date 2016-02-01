@@ -40,7 +40,7 @@ class people::jorgemancheno::applications::general {
   ]
 
   # https://github.com/boxen/puppet-brewcask/issues/22#issuecomment-150398085
-  sudoers { 'installer':
+  sudoers { "installer":
     users    => $::boxen_user,
     hosts    => 'ALL',
     commands => [

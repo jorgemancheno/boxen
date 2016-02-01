@@ -5,7 +5,7 @@
 class people::jorgemancheno::homebrew {
 
     # Install archey
-    package { 'archey':
+    package { "archey":
       ensure => present
     }
 }

@@ -4,10 +4,10 @@
 #
 class people::jorgemancheno::nodejs {
 
-    $version = "0.12.0"
+    $version = '0.12.0'
 
     # Set node.js version
-    class { 'nodejs::global': version => $version }
+    class { "nodejs::global": version => $version }
 
     # Install some node modules
     npm_module { "bower for ${version}":

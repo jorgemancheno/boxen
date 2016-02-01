@@ -4,10 +4,10 @@
 #
 class people::jorgemancheno::ruby {
 
-    $version = "2.2.2"
+    $version = '2.2.2'
 
     # Set ruby version
-    class { 'ruby::global': version => $version }
+    class { "ruby::global": version => $version }
 
     # Install some gems
     ruby_gem { "sass for ${version}":

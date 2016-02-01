@@ -5,7 +5,7 @@
 class people::jorgemancheno::osx {
 
     # Sets window appearance to Graphite. 6 = Graphite, 1 = Blue
-    boxen::osx_defaults { 'Set window appearance to Graphite':
+    boxen::osx_defaults { "Set window appearance to Graphite":
         domain => 'NSGlobalDomain',
         key    => 'AppleAquaColorVariant',
         value  => '6',
@@ -13,7 +13,7 @@ class people::jorgemancheno::osx {
     }
 
     # Sets window highlight to Graphite.
-    boxen::osx_defaults { 'Set window highlight to Graphite':
+    boxen::osx_defaults { "Set window highlight to Graphite":
         domain => 'NSGlobalDomain',
         key    => 'AppleHighlightColor',
         value  => '0.780400 0.815700 0.858800',
@@ -72,7 +72,7 @@ class people::jorgemancheno::osx {
     # Set the default value (35)
     # include osx::global::key_repeat_delay
     #
-    # class { 'osx::global::key_repeat_delay':
+    # class { "osx::global::key_repeat_delay":
     #     delay => 35
     # }
 
@@ -82,7 +82,7 @@ class people::jorgemancheno::osx {
     # Set the default value (0)
     # include osx::global::key_repeat_rate
     #
-    # class { 'osx::global::key_repeat_rate':
+    # class { "osx::global::key_repeat_rate":
     #   rate => 0
     # }
 
@@ -92,7 +92,7 @@ class people::jorgemancheno::osx {
     # Set the default value (enabled=true)
     include osx::global::natural_mouse_scrolling
     #
-    # class { 'osx::global::natural_mouse_scrolling':
+    # class { "osx::global::natural_mouse_scrolling":
     #     delay => false
     # }
 
@@ -102,7 +102,7 @@ class people::jorgemancheno::osx {
     # Set the default value (1.5)
     # include osx::universal_access::cursor_size
     #
-    class { 'osx::universal_access::cursor_size':
+    class { "osx::universal_access::cursor_size":
         zoom => 2
     }
 
@@ -112,7 +112,7 @@ class people::jorgemancheno::osx {
     # Set the default value (36)
     # include osx::dock::icon_size
     #
-    class { 'osx::dock::icon_size':
+    class { "osx::dock::icon_size":
         size => 36
     }
 
@@ -122,7 +122,7 @@ class people::jorgemancheno::osx {
     # Set the default value ('right')
     # include osx::dock::position
     #
-    class { 'osx::dock::position':
+    class { "osx::dock::position":
         position => 'right'
     }
 
@@ -132,7 +132,7 @@ class people::jorgemancheno::osx {
     # Set the default value ('start')
     # include osx::dock::pin_position
     #
-    class { 'osx::dock::pin_position':
+    class { "osx::dock::pin_position":
         position => 'middle'
     }
 
@@ -140,23 +140,23 @@ class people::jorgemancheno::osx {
     # Configure the action for a hot corner
     #
     # Make the top left corner display the Dashboard
-    # osx::dock::hot_corner { 'Top Left':
+    # osx::dock::hot_corner { "Top Left":
     #     action => 'Dashboard'
     # }
 
     # Make the top left corner start the screensaver
-    osx::dock::hot_corner { 'Top Left':
+    osx::dock::hot_corner { "Top Left":
         action => 'Start Screen Saver'
     }
 
     # Make the bottom right corner show the desktop
-    # osx::dock::hot_corner { 'Show the desktop':
+    # osx::dock::hot_corner { "Show the desktop":
     #     position => 'Bottom Right',
     #     action => 'Desktop'
     # }
 
     # Make the bottom left corner put the display to sleep
-    osx::dock::hot_corner { 'Bottom Left':
+    osx::dock::hot_corner { "Bottom Left":
         action => 'Put Display to Sleep'
     }
 
@@ -165,9 +165,9 @@ class people::jorgemancheno::osx {
     #
     # Make the top right corner start the screen saver and the bottom left corner launch Mission Control
     #
-    # class { 'osx::dock::hot_corners':
-    #     top_right => "Start Screen Saver",
-    #     bottom_left => "Mission Control"
+    # class { "osx::dock::hot_corners":
+    #     top_right => 'Start Screen Saver',
+    #     bottom_left => 'Mission Control'
     # }
 
     # osx::sound::interface_sound_effects
@@ -176,7 +176,7 @@ class people::jorgemancheno::osx {
     # Set the default value (true)
     # include osx::sound::interface_sound_effects
     #
-    class { 'osx::sound::interface_sound_effects':
+    class { "osx::sound::interface_sound_effects":
         enable => false
     }
 
@@ -186,7 +186,7 @@ class people::jorgemancheno::osx {
     # Set the default mode (1)
     # include osx::mouse::button_mode
     #
-    class { 'osx::mouse::button_mode':
+    class { "osx::mouse::button_mode":
         mode => 2
     }
 
@@ -196,7 +196,7 @@ class people::jorgemancheno::osx {
     # Set the default value (enabled=false)
     # include osx::mouse::smart_zoom
     #
-    # class { 'osx::mouse::smart_zoom':
+    # class { "osx::mouse::smart_zoom":
     #     enabled => true
     # }
 
@@ -206,7 +206,7 @@ class people::jorgemancheno::osx {
     # Set the default value (enabled=false)
     # include osx::mouse::swipe_between_pages
     #
-    # class { 'osx::mouse::swipe_between_pages':
+    # class { "osx::mouse::swipe_between_pages":
     #     enabled => true
     # }
 
@@ -216,7 +216,7 @@ class people::jorgemancheno::osx {
     # Set the default value (true, 128)
     # include osx::dock::magnification
     #
-    # class { 'osx::dock::magnification':
+    # class { "osx::dock::magnification":
     #     magnification => true,
     #     magnification_size => 84
     # }
