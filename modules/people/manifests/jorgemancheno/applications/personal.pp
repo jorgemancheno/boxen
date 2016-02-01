@@ -4,8 +4,6 @@
 #
 class people::jorgemancheno::applications::personal {
 
-  include brewcask
-
   $apps = [
     'handrake',
     '1password'

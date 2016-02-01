@@ -16,6 +16,7 @@ class people::jorgemancheno::applications (
     $_system_roles = hiera_array('people::jorgemancheno::system_roles', [])
     $roles = $system_roles ? { undef => $_system_roles, default => $system_roles }
 
+    include brewcask
     include people::jorgemancheno::applications::general
 
     if member($roles, 'work') {

@@ -13,6 +13,7 @@ class people::jorgemancheno::applications::work {
     include wget
 
     # class { 'php::global':
-    #     version => '5.5.17'
+    #   version => '5.6'
     # }
+
 }

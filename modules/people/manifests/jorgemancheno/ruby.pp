@@ -4,23 +4,22 @@
 #
 class people::jorgemancheno::ruby {
 
-    $version = "2.1.1"
+    $version = "2.2.2"
 
-    # # Set ruby version
-    # # class { 'ruby::global': version => $version }
+    # Set ruby version
+    class { 'ruby::global': version => $version }
 
-    # Install SASS
+    # Install some gems
     ruby_gem { "sass for ${version}":
-      gem     => 'sass',
-      ruby_version    => $version,
-      version => '~> 3.3.4'
+      gem           => 'sass',
+      version       => '~> 3.4.21',
+      ruby_version  => $version,
     }
 
-    # Install lunchy
     ruby_gem { "lunchy for ${version}":
-      gem     => 'lunchy',
-      ruby_version    => $version,
-      version => '~> 0.7.0'
+      gem           => 'lunchy',
+      version       => '~> 0.10.4',
+      ruby_version  => $version,
     }
 
 }

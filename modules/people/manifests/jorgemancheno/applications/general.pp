@@ -4,17 +4,27 @@
 #
 class people::jorgemancheno::applications::general {
 
-  include brewcask
-
   # Applications
   $apps = [
-    'atom',
     'appcleaner',
-    'google-chrome',
+    'atom',
+    'bartender',
+    'boom',
     'dropbox',
     'firefox',
+    'framer-studio',
+    'github-desktop',
+    'google-chrome',
     'imageoptim',
+    'istat-menus',
     'iterm2',
+    'kaleidoscope',
+    'keepingyouawake',
+    'messenger',
+    'numi',
+    'sketch',
+    'slack',
+    'the-unarchiver',
     'transmit',
     'vagrant',
     'virtualbox',
@@ -25,6 +35,7 @@ class people::jorgemancheno::applications::general {
   # Applications that need sudo
   $sudoApps = [
     'alfred',
+    'moom',
     'textexpander'
   ]
 
