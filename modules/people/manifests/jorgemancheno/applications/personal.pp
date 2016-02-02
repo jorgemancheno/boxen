@@ -5,10 +5,11 @@
 class people::jorgemancheno::applications::personal {
 
   $apps = [
-    'handrake',
-    '1password'
+    'handbrake',
+    '1password',
     'sonos',
-    'transmission'
+    'steam',
+    'transmission',
   ]
 
   package { $apps: provider => 'brewcask' }

@@ -10,6 +10,7 @@ class people::jorgemancheno::applications::general {
     'atom',
     'bartender',
     'boom',
+    'cloud',
     'dropbox',
     'firefox',
     'framer-studio',
@@ -26,17 +27,18 @@ class people::jorgemancheno::applications::general {
     'slack',
     'the-unarchiver',
     'transmit',
+    'unrarx',
     'vagrant',
     'virtualbox',
     'vlc',
-    'xquartz'
+    'xquartz',
   ]
 
   # Applications that need sudo
   $sudoApps = [
     'alfred',
     'moom',
-    'textexpander'
+    'textexpander',
   ]
 
   # https://github.com/boxen/puppet-brewcask/issues/22#issuecomment-150398085
