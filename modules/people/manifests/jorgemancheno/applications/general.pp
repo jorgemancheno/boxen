@@ -12,6 +12,7 @@ class people::jorgemancheno::applications::general {
     'boom',
     'cloud',
     'dropbox',
+    'evernote',
     'firefox',
     'framer-studio',
     'github-desktop',
