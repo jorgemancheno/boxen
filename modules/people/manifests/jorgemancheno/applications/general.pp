@@ -6,6 +6,7 @@ class people::jorgemancheno::applications::general {
 
   # Applications
   $apps = [
+    'aerial',
     'appcleaner',
     'atom',
     'bartender',
@@ -30,7 +31,6 @@ class people::jorgemancheno::applications::general {
     'transmit',
     'unrarx',
     'vagrant',
-    'virtualbox',
     'vlc',
     'xquartz',
   ]
@@ -38,8 +38,8 @@ class people::jorgemancheno::applications::general {
   # Applications that need sudo
   $sudoApps = [
     'alfred',
-    'moom',
     'textexpander',
+    'virtualbox',
   ]
 
   # https://github.com/boxen/puppet-brewcask/issues/22#issuecomment-150398085
@@ -54,8 +54,8 @@ class people::jorgemancheno::applications::general {
 
   Package { provider => 'brewcask' }
   package { $apps: }
-  package {
-    $sudoApps: require  => [ Homebrew::Tap['caskroom/cask'], Sudoers['installer'] ],
+  package { $sudoApps:
+    require  => [ Homebrew::Tap['caskroom/cask'], Sudoers['installer'] ],
   }
 
 }
