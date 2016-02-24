@@ -15,6 +15,7 @@ class people::jorgemancheno::applications::general {
     'dropbox',
     'evernote',
     'firefox',
+    'flux',
     'framer-studio',
     'github-desktop',
     'google-chrome',
