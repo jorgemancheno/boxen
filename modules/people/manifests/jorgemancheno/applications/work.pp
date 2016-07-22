@@ -4,16 +4,6 @@
 #
 class people::jorgemancheno::applications::work {
 
-    include autoconf
-    include libpng
-    include libtool
-    include mysql
-    include pcre
-    include php
-    include wget
-
-    # class { "php::global":
-    #   version => '5.6'
-    # }
-
+    # Nothing to see here
+    
 }

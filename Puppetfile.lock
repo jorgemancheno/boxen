@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.1)
@@ -11,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.6)
+    brewcask (0.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -46,22 +41,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-libpng
-  specs:
-    libpng (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-libtool
-  specs:
-    libtool (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-mysql
-  specs:
-    mysql (2.2.0)
+    hub (1.4.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -71,7 +51,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (5.0.5)
+    nodejs (5.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -84,19 +64,9 @@ GITHUBTARBALL
     osx (2.8.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-pcre
-  specs:
-    pcre (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (3.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-php
-  specs:
-    php (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -111,17 +81,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.5.4)
+    ruby (8.5.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-wget
-  specs:
-    wget (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -131,12 +96,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.4.3)
+    inifile (1.5.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.11.0)
+    stdlib (4.12.0)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -144,33 +109,26 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 DEPENDENCIES
-  autoconf (= 1.0.0)
   boxen (= 3.11.1)
-  brewcask (= 0.0.6)
+  brewcask (= 0.0.7)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
   git (= 2.9.0)
   go (= 2.1.0)
   homebrew (= 2.0.2)
-  hub (= 1.4.1)
-  inifile (= 1.4.3)
-  libpng (= 1.0.0)
-  libtool (= 1.0.0)
+  hub (= 1.4.2)
+  inifile (= 1.5.0)
   module_data (= 0.0.4)
-  mysql (= 2.2.0)
   nginx (= 1.7.0)
-  nodejs (= 5.0.5)
+  nodejs (= 5.0.7)
   openssl (= 1.0.0)
   osx (= 2.8.0)
-  pcre (= 1.0.0)
   phantomjs (= 3.0.0)
-  php (= 2.0.1)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
-  ruby (= 8.5.4)
-  stdlib (= 4.11.0)
+  ruby (= 8.5.6)
+  stdlib (= 4.12.0)
   sudo (= 1.0.0)
-  wget (= 1.0.1)
   xquartz (= 1.2.1)
 
