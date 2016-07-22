@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.7)
+    brewcask (0.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -31,7 +31,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.7.12)
+    git (2.9.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -41,7 +41,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.13.0)
+    homebrew (2.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -66,7 +66,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.6.0)
+    nginx (1.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -146,20 +146,20 @@ GITHUBTARBALL
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 3.11.1)
-  brewcask (= 0.0.7)
+  brewcask (= 0.0.6)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
-  git (= 2.7.12)
+  git (= 2.9.0)
   go (= 2.1.0)
-  homebrew (= 1.13.0)
+  homebrew (= 2.0.2)
   hub (= 1.4.1)
   inifile (= 1.4.3)
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   module_data (= 0.0.4)
   mysql (= 2.2.0)
-  nginx (= 1.6.0)
+  nginx (= 1.7.0)
   nodejs (= 5.0.5)
   openssl (= 1.0.0)
   osx (= 2.8.0)
